@@ -1,0 +1,34 @@
+# ===================================================================
+# IDE and Editor Files
+# Purpose: Ignores settings and temporary files from code editors.
+# Reason: These are specific to a user's machine and not part of the project code.
+# ===================================================================
+.vscode/
+tempCodeRunnerFile.js
+.idea/
+
+# ===================================================================
+# System Files
+# Purpose: Ignores metadata files created by operating systems.
+# Reason: These are irrelevant to the code and create clutter for other users.
+# ===================================================================
+.DS_Store
+Thumbs.db
+
+# ===================================================================
+# Dependency Directories (Crucial for future projects)
+# Purpose: Ignores third-party code downloaded by package managers.
+# Reason: This folder can be huge. The 'package.json' file (which you'll use later) is the recipe to recreate it, so we only save the recipe, not the ingredients.
+# ===================================================================
+node_modules/
+
+# ===================================================================
+# Security Files
+# Purpose: Ignores files containing sensitive information.
+# Reason: CRITICAL for security. Prevents accidentally exposing API keys, passwords, or other secrets on public repositories.
+# ===================================================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
