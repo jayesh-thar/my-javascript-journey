@@ -18,7 +18,7 @@ console.log(id01 === id02);  //false //if we are passing same value to it but in
 
 //How to use BigInt Datatype:-
 
-const BigNumber = 98985137077202005106n // at the need of any big number type 'n' to convert to BigInt 
+const BigNumber = 9898989565713516n // at the need of any big number type 'n' to convert to BigInt 
 
 
 // 2. non-primitive(Reference):- There are 3 types of non-primitive data type 

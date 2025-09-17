@@ -10,7 +10,7 @@ Great progress, Jayesh! You've covered a wide range of fundamental JavaScript to
   
 ```javascript
 const accountId = 92301703023;
-let accountEmail = "jayeshthar1409@gmail.com";
+let accountEmail = "jayeshthar@gmail.com";
 var accountPassword = "12345";
 accountCity = "Rajkot"; // Avoid this form of declaration.
 let accountState;

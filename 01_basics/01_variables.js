@@ -15,7 +15,7 @@ var accountPassword = "12345";
 accountCity = "Rajkot";  
 
 // Reassigning values to let and var variables.
-accountEmail = "jayeshthar42@gmail.com";
+accountEmail = "jayeshthar@gmail.com";
 accountPassword = "789456";
 accountCity = "Diu";
 

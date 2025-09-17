@@ -20,7 +20,7 @@ console.log(anotherYoutubeChannel);   //WriteCodeWithJayesh
 //Here in Stack memory when we rewrite the Value at that a new value copy from old variable is created.So there is three values is there in stack memory
 
 let userOne = {
-    mailId: "Jayesh1409@google.com",
+    mailId: "Jayesh@google.com",
     upiId: 784512985623
 }
 
