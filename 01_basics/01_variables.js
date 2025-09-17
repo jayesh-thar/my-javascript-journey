@@ -3,7 +3,7 @@ const accountId = 92301703023;
 
 // Using let to declare variables that can be reassigned.
 // let variables have block scope, making them preferable over var.
-let accountEmail = "jayeshthar1409@gmail.com";
+let accountEmail = "jayeshthar@gmail.com";
 let accountState; // When declared without a value, it's considered undefined.
 
 // Using var to declare variables (not recommended).
