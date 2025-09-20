@@ -33,7 +33,7 @@ My primary objective is to gain a deep, foundational understanding of JavaScript
 
 Below is the structure of the repository. Each link will take you to the corresponding section with the relevant code and notes.
 
-* 📂 **[01-basics](./01-basics/)**: Covers the absolute fundamentals, including variables (`let`, `const`, `var`), primitive data types, type conversion, operators, strings, numbers, and dates.
+* 📂 **[01-basics](./01-_basics/)**: Covers the absolute fundamentals, including variables (`let`, `const`, `var`), primitive data types, type conversion, operators, strings, numbers, and dates.
 
 * 📂 **[02-arrays-and-objects](./02-arrays-and-objects/)**: A deep dive into JavaScript's core data structures. Includes creating and manipulating arrays, all major array methods (`map`, `filter`, `reduce`), and working with objects.
 
