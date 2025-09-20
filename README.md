@@ -35,7 +35,7 @@ Below is the structure of the repository. Each link will take you to the corresp
 
 * 📂 **[01-basics](./01_basics/)**: Covers the absolute fundamentals, including variables (`let`, `const`, `var`), primitive data types, type conversion, operators, strings, numbers, and dates.
 
-* 📂 **[02-arrays-and-objects](./02-arrays-and-objects/)**: A deep dive into JavaScript's core data structures. Includes creating and manipulating arrays, all major array methods (`map`, `filter`, `reduce`), and working with objects.
+* 📂 **[02-arrays-and-objects](./02_arrays_objects/)**: A deep dive into JavaScript's core data structures. Includes creating and manipulating arrays, all major array methods and working with objects and it's method's.
 
 * 📂 **[03-control-flow](./03-control-flow/)**: Explores the logic and decision-making backbone of programming with conditional statements like `if/else`, `switch`, and understanding truthy/falsy values.
 
