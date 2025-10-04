@@ -14,6 +14,7 @@ This repository serves as a personal log of my journey through the JavaScript la
 ### ✨ My Goals & Philosophy
 
 My primary objective is to gain a deep, foundational understanding of JavaScript. I am focusing on:
+
 * **Core Concepts:** Truly understanding the "why" behind concepts like scope, closures, prototypes, and the event loop.
 * **Clean Code:** Writing code that is readable, maintainable, and follows best practices.
 * **Problem-Solving:** Developing the skills to break down complex problems into smaller, manageable pieces.
@@ -37,42 +38,50 @@ Below is the structure of the repository. Each link will take you to the corresp
 
 * 📂 **[02-arrays-and-objects](./02_arrays_objects/)**: A deep dive into JavaScript's core data structures. Includes creating and manipulating arrays, all major array methods and working with objects and it's method's.
 
-* 📂 **[03-control-flow](./03-control-flow/)**: Explores the logic and decision-making backbone of programming with conditional statements like `if/else`, `switch`, and understanding truthy/falsy values.
+* 📂 **[03-functions](./03_functions_scopes/)**: A comprehensive look at functions, the building blocks of programs. Includes scopes (global, block, function), parameters, the `this` keyword, arrow functions, and Immediately Invoked Function Expressions (IIFE).
 
-* 📂 **[04-iteration](./04-iteration/)**: Focuses on loops for executing code repeatedly. Covers `for` loops, `while` loops, `do-while`, and modern iterators for arrays and objects like `for...of`.
+* 📂 **[04-control-flow](./04_controlflow/)**: Explores the logic and decision-making backbone of programming with conditional statements like `if/else`, `switch`, and understanding truthy/falsy values.
 
-* 📂 **[05-functions](./05-functions/)**: A comprehensive look at functions, the building blocks of programs. Includes scopes (global, block, function), parameters, the `this` keyword, arrow functions, and Immediately Invoked Function Expressions (IIFE).
+* 📂 **[05-iteration](./05_iteration/)**: Focuses on loops for executing code repeatedly. Covers `for` loops, `while` loops, `do-while`, and modern iterators for arrays and objects like `for...of`.
 
-* 📂 **[06-dom-manipulation](./06-dom-manipulation/)**: Focuses on interacting with web pages using the Document Object Model (DOM). Covers selecting elements, changing content and styles, and creating/deleting new elements dynamically.
+* 📂 **[06-dom-manipulation](./06_dom/)**: Focuses on interacting with web pages using the Document Object Model (DOM). Covers selecting elements, changing content and styles, and creating/deleting new elements dynamically.
 
-* 📂 **[07-events](./07-events/)**: Covers handling user interactions and making web pages interactive. Includes event listeners, the event object, event propagation (bubbling and capturing), and common events like `click`, `mouseover`, and `keydown`.
+* 📂 **[07-events](./08_events/)**: Covers handling user interactions and making web pages interactive. Includes event listeners, the event object, event propagation (bubbling and capturing), and common events like `click`, `mouseover`, and `keydown`.
 
-* 📂 **[08-asynchronous-js](./08-asynchronous-js/)**: Tackles the core concepts of asynchronous programming. Covers the event loop, `setTimeout`, Promises (`.then`, `.catch`, `.finally`), modern `async/await` syntax, and making API requests with `fetch`.
+* 📂 **[08-api_handling](./08_api_handling/)**: Tackles the core concepts of asynchronous programming. Covers the event loop, `setTimeout`, Promises (`.then`, `.catch`, `.finally`), modern `async/await` syntax, and making API requests with `fetch`.
 
-* 📂 **[09-object-oriented-programming](./09-object-oriented-programming/)**: Explains OOP concepts in JavaScript. Covers prototypes, prototypal inheritance, constructor functions, ES6 Classes, getters & setters, and static properties.
+* 📂 **[09-object-oriented-programming](./09_classes_and_oop/)**: Explains OOP concepts in JavaScript. Covers prototypes, prototypal inheritance, constructor functions, ES6 Classes, getters & setters, and static properties.
 
-* 📂 **[10-advanced-concepts](./10-advanced-concepts/)**: Includes powerful but advanced topics like Closures (for data privacy and encapsulation) and the essential function methods: `call`, `bind`, and `apply`.
+* 📂 **[Advanced-concepts](./Advance_Js/)**: Includes powerful but advanced topics like Closures (for data privacy and encapsulation) and the essential function methods: `call`, `bind`, and `apply`.
+
+* **[FUN_WITH_JS](./Fun_With_JS/)**: Simple background changing with random color by clicking button.
 
 ---
 
 ### 🚀 How to Use This Repository
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
+
     ```bash
     git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     ```
-2.  **Navigate to a specific folder** to see the exercises on that topic.
-3.  **To run JavaScript files (`.js`):** Most files in this repository are designed to be run using Node.js.
+
+2. **Navigate to a specific folder** to see the exercises on that topic.
+
+3. **To run JavaScript files (`.js`):** Most files in this repository are designed to be run using Node.js.
+
     ```bash
     node path/to/the/file.js
     ```
-4.  **To view DOM projects:** For folders related to the DOM or events, open the `index.html` file in your web browser.
+
+4. **To view DOM projects:** For folders related to the DOM or events, open the `index.html` file in your web browser.
 
 ---
 
 ### 📖 Learning Resources
 
 A huge thank you to the creators of these incredible resources that are guiding my journey:
+
 * [MDN Web Docs](https://developer.mozilla.org/en-US/)
 * [freeCodeCamp](https://www.freecodecamp.org/)
 * [Chai aur Code](https://www.youtube.com/@chaiaurcode)
