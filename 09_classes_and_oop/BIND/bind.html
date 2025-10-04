@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+    <script>
+        class React {
+            constructor() {
+                this.library = "React"
+                this.server = "https://localhost:300"
+
+                //requirement
+                document.querySelector('button').addEventListener('click', this.handleClick.bind(this)) //You can explicitly bind this to the handleClick method in the constructor.
+            }
+            handleClick() {
+                console.log("Clicked");
+                console.log(this.server);
+            }
+        }
+        const app = new React()
+
+        // IF WE NOT USE 'BIND' -> The issue you're encountering is due to how JavaScript handles the this keyword in event handlers. In your code, the this context inside the handleClick method is not correctly bound to the instance of the React class when the method is called as an event handler.
+        // THERE ARE THE MANY SOLUTION LIKE USING ARROW FUNCTION, USING 'BIND' METHOD AND USING CLASS PROPERTY(EXPERIMENTAL). BUT THE MOST COMMON AND RECOMMENDED APPROCHED IS TO USE THE 'BINND' METHOD if you're writing code in traditional ES6 syntax...
+
+        /* #ALSO WRITE LIKE
+
+        class React {
+            constructor() {
+                this.library = "React";
+                this.server = "https://localhost:300";
+
+                // Bind `this` to the method
+                this.handleClick = this.handleClick.bind(this);
+
+                document.querySelector('button').addEventListener('click', this.handleClick);
+            }
+
+            handleClick() {
+                console.log("Clicked");
+                console.log(this.server);
+            }
+        }
+        */
+    </script>
+</body>
+</html>
