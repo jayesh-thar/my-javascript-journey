@@ -1,0 +1,62 @@
+<!-- How to create a new element in DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+    </div> -->
+
+    
+
+</body>
+<script>
+    // const parent = document.querySelector('.parent')
+    // console.log(parent); //got all days
+    // console.log(parent.children); // HTML Collection
+    // console.log(parent.children[1]);
+    // console.log(parent.children[1].innerHTML); //tuesday
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML); //display all the day's
+        
+    // } //write "parent.childern" because parent does not give element.
+
+    // parent.children[1].style.color = "red"
+
+    // //Usful for tageting first or last Element. And from that we can change the style of that element
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling); // sibling means uska bbhai => to it next element
+
+    // console.log(parent.childNodes);
+
+    const div = document.createElement('div')
+    console.log(div);
+
+    div.className = 'main'
+    // div.id = Math.random()
+    div.id = Math.random() * 10 + 1
+    div.id = Math.round(Math.random() * 10 + 1)
+    // to set custom attribute 
+    div.setAttribute("title", "jayehs thar title")
+    div.style.backgroundColor="red"
+    div.style.padding="12px"  
+    // div.innerText="jayesh---thar"
+    const addText = (document.createTextNode("jayesh--thar"))
+    div.appendChild(addText) // instand of this "div.innerText="jayesh---thar"" this is perfer and it has same in meaning and same in work.
+    document.body.appendChild(div) //attach or creat a new div 
+</script>
+</html>

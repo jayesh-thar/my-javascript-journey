@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-balck">
+        <h1>DOM learning on chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+#to target element:
+document.getElementById('title') => id="titile" 
+
+document.getElementById('title').id
+
+document.getElementById('title').class => undefined
+
+
+document.getElementById('title').className => 'heading' => class="heading"
+
+
+document.getElementById('title').getAttribute('id') => 'title'
+
+document.getElementById('title').getAttribute('class') => 'class'
+
+
+document.getElementById('class', 'test') => changing the class name => class="test" => it overwrite class name
+
+title.style.backgroundColor = 'red'
+title.style.backgroundColor = "green" => set the styling by using it's 'id'(ex,. id="title")
+
+***To add contant:
+title.innerHTML
+title.textContent
+title.innerText => suppose in id="title" we have para tag and in than some word is hidden by spam tag(ex., style: "display:"hide) then that hidden part is not shown by title.innertext. but in title.textContent all the text is shown
+
+document.querySelector('h1') => give first <h1>. LLY for 
+document.querySelector('#title') 
+document.querySelector('.heaind') 
+document.querySelector('input[type="password"]')
+
+document.getElementByClassName('list-item')
+const tempClassList = document.getElementByClassName('list-item')
+tempClassList.foreach(function(li) {
+    console.log(<tagName>)
+}) =>not get
+
+Array.from(tempClassList) => convert tempClassList to Array
+const myCovertedArray = Array.from(tempClassList)
+myConvertedArray.forEach(function(li) {
+        li.style.color = 'red'
+})
+
+
+
+
+
+
+
+-->
