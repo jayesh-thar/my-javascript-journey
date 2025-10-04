@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 projects with Async JS</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        // setTimeout(function() {
+        //     console.log("Jayesh");
+        // }, 5000) //At a specific time, somethiing can be done
+
+        const name = function() {
+            console.log("Jayesh");
+        }
+        setTimeout(name, 3000) // we have to write "name" -> referance || where "name()" -> for executed[it direct executed function and there is no timeout timer]
+        
+        const changeText = function() {
+            document.querySelector('h1').innerHTML = "Hello Everyone"
+        }
+        const changeMe = setTimeout(changeText, 2000) //no any effect, if we write in any variable or not.
+
+        // clearTimeout(changeMe)//it is not work beause at which event it will work???, So here we have to do in click event where, when user click on stop buttom before the timeout timer the thing which will be change will not change.
+
+        document.querySelector('#stop').addEventListener('click', function() {
+            clearTimeout(changeMe)
+            console.log("#STOPPED");
+        })
+
+    </script>
+</body>
+</html>

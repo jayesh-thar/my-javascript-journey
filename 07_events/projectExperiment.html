@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello Everyone, Welcome to my page!</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        // ---> project experiment with settimeout and setInterval <---
+
+        // 1. setTimeout:- 
+        
+        // document.querySelector('h2').innerHTML = "Hi Jayesh"
+        
+        // setInterval(function() {
+        //     console.log("hi");
+        // }, 2000)
+
+        // const printingName = function() {
+        //     console.log("Jayesh");
+        // }
+        // setInterval(printingName, 1000) 
+
+        // document.querySelector('#start').addEventListener('click', function() {
+        //     setTimeout("Jayesh", 1000) // This doesn't work because "Jayesh" is just a string, not executable code.
+        // }) // instand of this code we write like as following code -> ...
+
+        // const name = function() {
+        //     console.log("Jayesh");
+        // }
+        // document.querySelector('#start').addEventListener('click', function() {
+        //     setTimeout(name, 1000)
+        // })
+
+        // 2. setInterval:- 
+
+        // setInterval(function() {
+        //     console.log("hi");
+        // }, 1000)
+
+        // let close;
+        // const printName = function() {
+        //     console.log("Jayesh");
+        // }
+        // setInterval(printName, 1000)
+
+        // let close;
+        // const printName = function() {
+        //     console.log("Jayesh");
+        // }
+        // document.querySelector('#start').addEventListener('click', function() {
+        //     close = setInterval(printName, 1000)
+        // })
+        // document.querySelector('#stop').addEventListener('click', function() {
+        //     clearInterval(close)
+        // })
+
+
+        // PROJECT 01:- START TO CHANGE BACKGROUND AND STOP TO STOP THAT INSTAND PERTICULAR BACKGROUND.
+
+
+        // const random01 = Math.floor(Math.random() * 255)
+        // const random02 = Math.floor(Math.random() * 255)
+        // const random03 = Math.floor(Math.random() * 255)
+
+
+        // const colorCode = "rgb" + "(" + random01 + "," + random02 + "," + random03 + ")"
+        
+        // let changColor = function() {
+        //     const name = document.body.style.backgroundColor = colorCode
+        // }
+        // document.querySelector('#start').addEventListener('click', function() {
+        //     setInterval(changColor, 1000)
+        //     console.log("Change");
+            
+        // })
+        //NOTE: HERE COLOR IS NOT CHANGE AT EVERY 1SEC BECAUSE WE WRITE RANDOM COLORCODE IN SIMPLE CODE SCOPE I MEAN TO SAY WRITE IN FUNCTION SO AT EVERY CALL IT GENERATED A NEW CODE [The random RGB values are generated each time the function is called.]. THEREFORE THE UPDATED CODE IS: -------->
+        
+        let close;
+        const  changColor = function() {
+            const random01 = Math.floor(Math.random() * 255);
+            const random02 = Math.floor(Math.random() * 255);
+            const random03 = Math.floor(Math.random() * 255);
+
+            const colorCode = "rgb(" + random01 + "," + random02 + "," + random03 + ")";
+            document.body.style.backgroundColor = colorCode;
+        }
+        // document.querySelector('#start').addEventListener('click', function() {
+        //     close = setInterval(changColor, 1000);
+        //     console.log("Change");
+        // });
+        // document.querySelector('#stop').addEventListener('click', function() {
+        //     clearInterval(close)
+        // })
+        //this code run perfecly but there are some issues, so when user click start button so at that time at every clicking a new interval is establised so to avoid this a new concept is there which is "DEBOUNCE THE CLICK EVENT"
+
+        //Each click on the "Start" button creates a new setInterval instance, resulting in multiple intervals running concurrently and triggering the changColor function every second. If clicked multiple times, this leads to overlapping background color changes. To prevent this, it's essential to ensure that only one interval runs at a time by checking if an interval is already active before setting up a new one.
+
+        let intervalId;
+        let isRunning = false;
+
+        document.querySelector('#start').addEventListener('click', function() {
+            if (!isRunning) {
+                intervalId = setInterval(changColor, 2000);
+                isRunning = true;
+                console.log("Change");
+            }
+        });
+
+        // Optional: Add a stop button to clear the interval
+        document.querySelector('#stop').addEventListener('click', function() {
+            if (isRunning) {
+                clearInterval(intervalId);
+                isRunning = false;
+                console.log("Stopped");
+            }
+        });
+
+    </script>
+</body>
+</html>

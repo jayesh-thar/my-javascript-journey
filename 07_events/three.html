@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 projects with Async JS</title>
+</head>
+<body>
+    <h1>Chai Aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        // setInterval(function() {
+        //     console.log("Jayesh", Date.now());
+        // }, 1000)
+
+        // const printNameAndDate = function() {
+        //     console.log("Jayesh", Date.now());
+        // }
+        // setInterval(printNameAndDate, 1000)
+
+        const printNameAndDate = function(string) {
+            console.log(string, Date.now());
+        }
+        // const intervalId = setInterval(printNameAndDate, 1000, "Hi")
+        // clearInterval(intervalId)
+
+        // EXPERIMENT: START - STOP
+
+        let intervalId;//global variable which is helpfull for both function for scoping.
+
+        document.querySelector('#start').addEventListener('click', function() {
+            intervalId = setInterval(printNameAndDate, 1000, "Hi");
+        });
+
+        document.querySelector('#stop').addEventListener('click', function() {
+            clearInterval(intervalId);
+        });
+    </script>
+
+</body>
+</html>
