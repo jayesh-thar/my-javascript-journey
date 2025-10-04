@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        // const requestUrl = 'https://jsonplaceholder.typicode.com/todos/1'
+        // const xhr = new XMLHttpRequest();
+        // xhr.open('GET', requestUrl)
+        // // console.log("Jayesh");
+        // // console.log(xhr.readyState);
+        // xhr.onreadystatechange = function() {
+        //     console.log(xhr.readyState); //continuosly state changing cheacking
+        //     if(xhr.readyState === 4) {
+        //         console.log(this.responseText);
+        //         const data = this.responseText; // here when we do typeof data it will shown in string datatype so first we have to convert to object, not by writting OBJECT(this.responseText) but we have convert to string to JSON by JSON.parse. here parse convert string to JSON, which is JSON -> object.
+        //         const data01 = JSON.parse(this.responseText);
+        //         console.log(typeof data);
+        //         console.log(data.id)
+        //     }
+        // }
+        // xhr.send(); 
+
+        // EXPERIMENT: get the picture link and using this link make the profile card. 
+        const url = 'https://api.github.com/users/jayeshthar1409'
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url)
+        xhr.onreadystatechange = function() {
+            const data = JSON.parse(this.responseText);
+            console.log(data.avatar_url);
+        }        
+        xhr.send();
+    </script>
+</body>
+</html>
